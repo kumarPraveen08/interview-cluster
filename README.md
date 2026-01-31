@@ -1,36 +1,102 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Interview Cluster
 
-## Getting Started
+A powerful, interactive visualization tool for managing and exploring LeetCode interview questions organized by company. Built with Next.js, React, TypeScript, and D3.js.
 
-First, run the development server:
+## 📋 Description
 
+Interview Cluster helps you organize, visualize, and track your LeetCode interview preparation journey. Import questions from popular tech companies, visualize relationships in an interactive graph, filter by difficulty and company, and export your data in multiple formats. Perfect for interview preparation and tracking your progress across different companies.
+
+## ✨ Features
+
+- **📊 Interactive Graph Visualization**: Explore questions in a force-directed or semantic graph layout using D3.js
+- **📝 List View**: Browse questions in a detailed table with sorting and filtering
+- **🏢 Company-Based Organization**: Import and organize questions by company (Netflix, Google, Amazon, etc.)
+- **⭐ Favorites & Completed Tracking**: Mark questions as favorites or completed for easy tracking
+- **🔍 Advanced Filtering**: Filter by company, difficulty level, and search by title
+- **📥 Multiple Import Options**: 
+  - Import from GitHub repository (preset companies)
+  - Manual CSV import with flexible format
+- **📤 Data Export**: Export your library, favorites, or completed lists as JSON, TXT, or CSV
+- **🌓 Dark Mode**: Beautiful dark/light theme toggle
+- **💾 Local Storage**: All data persists locally in your browser
+- **📱 Responsive Design**: Works seamlessly on desktop and mobile devices
+
+## 🚀 Tech Stack
+
+- **Framework**: Next.js 16
+- **Language**: TypeScript
+- **Styling**: Tailwind CSS
+- **Visualization**: D3.js
+- **Icons**: Lucide React
+
+## 🚀 Getting Started
+
+### Prerequisites
+
+- Node.js 18+ 
+- npm, yarn, pnpm, or bun
+
+### Installation
+
+1. Clone the repository:
+```bash
+git clone https://github.com/kumarPraveen08/interview-cluster.git
+cd interview-cluster
+```
+
+2. Install dependencies:
+```bash
+npm install
+# or
+yarn install
+# or
+pnpm install
+```
+
+3. Run the development server:
 ```bash
 npm run dev
 # or
 yarn dev
 # or
 pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+4. Open [http://localhost:3000](http://localhost:3000) in your browser.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## 📖 Usage
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+### Importing Questions
 
-## Learn More
+1. **From GitHub**: Click the import button and select from preset companies (Netflix, Google, Amazon, etc.)
+2. **Manual Import**: Use the manual import feature to add custom CSV data
+   - Format: `Title,URL,Difficulty,Acceptance,Frequency`
+   - ID is optional (auto-generated if missing)
+   - Only Title is required
 
-To learn more about Next.js, take a look at the following resources:
+### Features Overview
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- **Graph View**: Visualize questions in an interactive D3.js graph with zoom, pan, and node selection
+- **List View**: Browse questions in a sortable table with infinite scroll
+- **Filtering**: Filter by company, difficulty, and search by title
+- **Tracking**: Mark questions as favorites or completed
+- **Export**: Export your data in JSON, TXT, or CSV format
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## 🛠️ Building for Production
 
-## Deploy on Vercel
+```bash
+npm run build
+npm start
+```
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## 📝 License
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+This project is open source and available under the MIT License.
+
+## 🤝 Contributing
+
+Contributions, issues, and feature requests are welcome!
+
+## 🙏 Acknowledgments
+
+- LeetCode question data sourced from [snehasishroy/leetcode-companywise-interview-questions](https://github.com/snehasishroy/leetcode-companywise-interview-questions)
